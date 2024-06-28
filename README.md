@@ -1,4 +1,4 @@
-<h1>Dupray Technical Test 2024</h1>
+<h1>Signifly Technical Test</h1>
 
 <h2>Installation</h2>
 
