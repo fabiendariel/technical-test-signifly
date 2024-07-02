@@ -26,7 +26,7 @@
                         </div>
                         <div class="my-4 flex justify-center items-center">
                             <p class="text-gray-900 font-semibold transition duration-500 ease-in-out">
-                            <u>Expertise</u> : {{ $team_leader->experience }} years
+                            <u>Work experience</u> : {{ $team_leader->experience }} years
                             </p>
                         </div>
                         <div class="my-4 flex justify-center items-center">
@@ -59,7 +59,7 @@
                         </div>
                         <div class="my-4 flex justify-center items-center">
                             <p class="text-gray-900 font-semibold transition duration-500 ease-in-out">
-                            <u>Expertise</u> : {{ $team_back->experience }} years
+                            <u>Work experience</u> : {{ $team_back->experience }} years
                             </p>
                         </div>
                         <div class="my-4 flex justify-center items-center">
@@ -92,7 +92,7 @@
                         </div>
                         <div class="my-4 flex justify-center items-center">
                             <p class="text-gray-900 font-semibold transition duration-500 ease-in-out">
-                            <u>Expertise</u> : {{ $team_front->experience }} years
+                            <u>Work experience</u> : {{ $team_front->experience }} years
                             </p>
                         </div>
                         <div class="my-4 flex justify-center items-center">
@@ -125,7 +125,7 @@
                         </div>
                         <div class="my-4 flex justify-center items-center">
                             <p class="text-gray-900 font-semibold transition duration-500 ease-in-out">
-                            <u>Expertise</u> : {{ $team_support->experience }} years
+                            <u>Work experience</u> : {{ $team_support->experience }} years
                             </p>
                         </div>
                         <div class="my-4 flex justify-center items-center">

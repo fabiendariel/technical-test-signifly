@@ -28,6 +28,7 @@ class StoreEmployeeRequest extends FormRequest
             'profileImg' => 'required|string',
             'knowledge' => 'required|string',
             'experience' => 'required|numeric',
+            'role' => 'required|string',
         ];
     }
 

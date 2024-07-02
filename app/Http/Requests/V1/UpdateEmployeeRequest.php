@@ -31,6 +31,7 @@ class UpdateEmployeeRequest extends FormRequest
                 'profileImg' => 'required|string',
                 'knowledge' => 'required|string',
                 'experience' => 'required|numeric',
+                'role' => 'required|string',
             ];
         } else {
             return [
@@ -40,13 +41,14 @@ class UpdateEmployeeRequest extends FormRequest
                 'profileImg' => 'sometimes|required',
                 'knowledge' => 'sometimes|required',
                 'experience' => 'sometimes|required',
+                'role' => 'required|string',
             ];
         }
     }
 
     protected function prepareForValidation()
     {
-        if ($this->postalCode) {
+        if ($this->profileImg) {
             $this->merge([
                 'profile_img' => $this->profileImg
             ]);

@@ -23,7 +23,8 @@ class EmployeeResource extends JsonResource
             'knowledge' => $this->knowledge,
             'experience' => $this->experience,
             'role' => $this->role,
-            'employee_skill' => SkillResource::collection($this->whenLoaded('skills'))
+            'employee_skill' => SkillResource::collection($this->whenLoaded('skills')),
+            'employee_project' => ProjectResource::collection($this->whenLoaded('projects'))
         ];
     }
 }
