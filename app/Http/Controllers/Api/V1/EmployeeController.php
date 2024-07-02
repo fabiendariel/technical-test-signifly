@@ -8,8 +8,6 @@ use Illuminate\Http\Request;
 use App\Http\Resources\EmployeeResource;
 use App\Http\Resources\EmployeeCollection;
 use App\Http\Filters\ApiFilter;
-use App\Http\Requests\V1\StoreEmployeeRequest;
-use App\Http\Requests\V1\UpdateEmployeeRequest;
 
 class EmployeeController extends Controller
 {
