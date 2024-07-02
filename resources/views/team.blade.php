@@ -20,7 +20,9 @@
                         <div class="text-md">
                             <a href="#"
                                 class="hover:text-indigo-500 text-gray-900 font-semibold transition duration-500 ease-in-out">{{ $team_leader->name }}</a>
-                            <p class="text-gray-500 uppercase text-sm"></p>    
+                            <p class="text-gray-500 uppercase text-sm"></p> 
+                            <p class="text-blue-500 uppercase text-sm">{{ $team_leader->phone }}</p>    
+                            <p class="text-red-500 text-sm">{{ $team_leader->email }}</p>     
                         </div>
                         <div class="my-4 flex justify-center items-center">
                             <p class="text-gray-900 font-semibold transition duration-500 ease-in-out">
@@ -51,7 +53,9 @@
                         <div class="text-md">
                             <a href="#"
                                 class="hover:text-indigo-500 text-gray-900 font-semibold transition duration-500 ease-in-out">{{ $team_back->name }}</a>
-                            <p class="text-gray-500 uppercase text-sm">{{ $team_back->role }}</p>    
+                            <p class="text-gray-500 uppercase text-sm">{{ $team_back->role }}</p> 
+                            <p class="text-blue-500 uppercase text-sm">{{ $team_back->phone }}</p>    
+                            <p class="text-red-500 text-sm">{{ $team_back->email }}</p>     
                         </div>
                         <div class="my-4 flex justify-center items-center">
                             <p class="text-gray-900 font-semibold transition duration-500 ease-in-out">
@@ -82,7 +86,9 @@
                         <div class="text-md">
                             <a href="#"
                                 class="hover:text-indigo-500 text-gray-900 font-semibold transition duration-500 ease-in-out">{{ $team_front->name }}</a>
-                            <p class="text-gray-500 uppercase text-sm">{{ $team_front->role }}</p>    
+                            <p class="text-gray-500 uppercase text-sm">{{ $team_front->role }}</p> 
+                            <p class="text-blue-500 uppercase text-sm">{{ $team_front->phone }}</p>    
+                            <p class="text-red-500 text-sm">{{ $team_front->email }}</p>     
                         </div>
                         <div class="my-4 flex justify-center items-center">
                             <p class="text-gray-900 font-semibold transition duration-500 ease-in-out">
@@ -113,7 +119,9 @@
                         <div class="text-md">
                             <a href="#"
                                 class="hover:text-indigo-500 text-gray-900 font-semibold transition duration-500 ease-in-out">{{ $team_support->name }}</a>
-                            <p class="text-gray-500 uppercase text-sm">{{ $team_leader->role }}</p>    
+                            <p class="text-gray-500 uppercase text-sm">{{ $team_support->role }}</p>   
+                            <p class="text-blue-500 uppercase text-sm">{{ $team_support->phone }}</p>    
+                            <p class="text-red-500 text-sm">{{ $team_support->email }}</p>   
                         </div>
                         <div class="my-4 flex justify-center items-center">
                             <p class="text-gray-900 font-semibold transition duration-500 ease-in-out">

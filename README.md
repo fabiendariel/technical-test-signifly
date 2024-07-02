@@ -42,6 +42,10 @@ npm install laravel-precognition-alpine
 <code data-theme="olaolu-palenight" data-lang="js" class="torchlight" style="background-color: #292D3E; --theme-selection-background: #7580B850;" id="clipText-28"><!-- Syntax highlighted by torchlight.dev --><div class="line"><span style="color: #C792EA;">import</span><span style="color: #BFC7D5;"> Alpine </span><span style="color: #C792EA;">from</span><span style="color: #BFC7D5;"> </span><span style="color: #D9F5DD;">'</span><span style="color: #C3E88D;">alpinejs</span><span style="color: #D9F5DD;">'</span><span style="color: #BFC7D5;">;</span></div><div class="line"><span style="color: #C792EA;">import</span><span style="color: #BFC7D5;"> Precognition </span><span style="color: #C792EA;">from</span><span style="color: #BFC7D5;"> </span><span style="color: #D9F5DD;">'</span><span style="color: #C3E88D;">laravel-precognition-alpine</span><span style="color: #D9F5DD;">'</span><span style="color: #BFC7D5;">;</span></div><div class="line">&nbsp;</div><div class="line"><span style="color: #BFC7D5;">window</span><span style="color: #C792EA;">.</span><span style="color: #89DDFF;">Alpine</span><span style="color: #BFC7D5;"> </span><span style="color: #C792EA;">=</span><span style="color: #BFC7D5;"> Alpine;</span></div><div class="line">&nbsp;</div><div class="line"><span style="color: #BFC7D5;">Alpine</span><span style="color: #C792EA;">.</span><span style="color: #82AAFF;">plugin</span><span style="color: #BFC7D5;">(Precognition);</span></div><div class="line"><span style="color: #BFC7D5;">Alpine</span><span style="color: #C792EA;">.</span><span style="color: #82AAFF;">start</span><span style="color: #BFC7D5;">();</span></div></code>
 </p>
 
+<p>Generate the SQLITE database <code>php artisan migrate</code> and
+
+add some test employees <code>php artisan db:seed</code></p>
+
 <h2>Useful Commands</h2>
 
 <p>Launch the Docker container: <code>./vendor/bin/sail up</code> or <code>./vendor/bin/sail up -d</code> to run it in the background.</p>
