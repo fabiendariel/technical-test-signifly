@@ -38,7 +38,8 @@ docker run --rm \
 
 <p>Install Precognition for Laravel and Alpine <code>
 npm install laravel-precognition-alpine
-</code> and update <code>resources/js/app.js</code> with this<br/>
+</code> and update <code>resources/js/app.js</code> with this</p>
+
 ```
 import Alpine from 'alpinejs';
 import Precognition from 'laravel-precognition-alpine';
@@ -47,8 +48,7 @@ window.Alpine = Alpine;
 
 Alpine.plugin(Precognition);
 Alpine.start();
----
-</p>
+```
 
 <p>Generate the SQLITE database <code>php artisan migrate</code> and
 
