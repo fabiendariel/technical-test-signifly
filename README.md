@@ -39,7 +39,15 @@ docker run --rm \
 <p>Install Precognition for Laravel and Alpine <code>
 npm install laravel-precognition-alpine
 </code> and update <code>resources/js/app.js</code> with this<br/>
-<code data-theme="olaolu-palenight" data-lang="js" class="torchlight" style="background-color: #292D3E; --theme-selection-background: #7580B850;" id="clipText-28"><!-- Syntax highlighted by torchlight.dev --><div class="line"><span style="color: #C792EA;">import</span><span style="color: #BFC7D5;"> Alpine </span><span style="color: #C792EA;">from</span><span style="color: #BFC7D5;"> </span><span style="color: #D9F5DD;">'</span><span style="color: #C3E88D;">alpinejs</span><span style="color: #D9F5DD;">'</span><span style="color: #BFC7D5;">;</span></div><div class="line"><span style="color: #C792EA;">import</span><span style="color: #BFC7D5;"> Precognition </span><span style="color: #C792EA;">from</span><span style="color: #BFC7D5;"> </span><span style="color: #D9F5DD;">'</span><span style="color: #C3E88D;">laravel-precognition-alpine</span><span style="color: #D9F5DD;">'</span><span style="color: #BFC7D5;">;</span></div><div class="line">&nbsp;</div><div class="line"><span style="color: #BFC7D5;">window</span><span style="color: #C792EA;">.</span><span style="color: #89DDFF;">Alpine</span><span style="color: #BFC7D5;"> </span><span style="color: #C792EA;">=</span><span style="color: #BFC7D5;"> Alpine;</span></div><div class="line">&nbsp;</div><div class="line"><span style="color: #BFC7D5;">Alpine</span><span style="color: #C792EA;">.</span><span style="color: #82AAFF;">plugin</span><span style="color: #BFC7D5;">(Precognition);</span></div><div class="line"><span style="color: #BFC7D5;">Alpine</span><span style="color: #C792EA;">.</span><span style="color: #82AAFF;">start</span><span style="color: #BFC7D5;">();</span></div></code>
+```
+import Alpine from 'alpinejs';
+import Precognition from 'laravel-precognition-alpine';
+
+window.Alpine = Alpine;
+
+Alpine.plugin(Precognition);
+Alpine.start();
+---
 </p>
 
 <p>Generate the SQLITE database <code>php artisan migrate</code> and
@@ -56,4 +64,4 @@ add some test employees <code>php artisan db:seed</code></p>
 
 <p>Run your laravel instance: <code>php artisan serve</code>.</p>
 
-<p>If not already launch, run you vite instance for the frontend part: <code>npm run dev</code>.</p>
+<p>If not already launch, run your vite instance for the frontend part after each install of a frontend library: <code>npm run dev</code>.</p>
