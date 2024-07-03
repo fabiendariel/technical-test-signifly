@@ -18,6 +18,9 @@ class SkillResource extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'position' => $this->position,
+            'expertise' => $this->whenPivotLoaded('expertise', function () {
+                return $this->pivot->expertise;
+            }),
         ];
     }
 }

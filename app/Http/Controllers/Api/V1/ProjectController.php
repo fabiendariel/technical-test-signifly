@@ -3,11 +3,13 @@
 namespace App\Http\Controllers\Api\V1;
 
 use App\Models\Project;
+use App\Http\Requests\V1\BulkStoreProjectRequest;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Resources\ProjectResource;
 use App\Http\Resources\ProjectCollection;
 use App\Http\Filters\ApiFilter;
+use Illuminate\Support\Arr;
 
 class ProjectController extends Controller
 {
@@ -29,9 +31,13 @@ class ProjectController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function bulkStore(BulkStoreProjectRequest $request)
     {
-        return new ProjectResource(Project::create($request->all()));
+        $bulk = collect($request->all())->map(function ($arr, $key) {
+            return Arr::except($arr, ['clientId', 'name', 'startDate', 'duration']);
+        });
+
+        Project::insert($bulk->toArray());
     }
 
     /**

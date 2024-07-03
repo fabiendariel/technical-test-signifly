@@ -34,7 +34,7 @@ class SkillController extends Controller
     public function bulkStore(BulkStoreSkillRequest $request)
     {
         $bulk = collect($request->all())->map(function ($arr, $key) {
-            return Arr::except($arr, ['customerId', 'billedDate', 'paidDate']);
+            return Arr::except($arr, ['name', 'position']);
         });
 
         Skill::insert($bulk->toArray());
