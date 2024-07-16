@@ -11,10 +11,11 @@ Route::prefix('v1')->group(function () {
     Route::apiResource('projects', ProjectController::class);
     Route::apiResource('skills', SkillController::class);
 
-    Route::post('skills/bulk', ['uses' => 'SkillController@bulkStore']);
-    Route::post('projects/bulk', ['uses' => 'ProjectController@bulkStore']);
+    //Route::post('skills/bulk', ['uses' => 'SkillController@bulkStore']);
+    //Route::post('projects/bulk', ['uses' => 'ProjectController@bulkStore']);
 });
 
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
+ 

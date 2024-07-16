@@ -16,14 +16,14 @@ class EmployeeController extends Controller
      */
     public function index(Request $request)
     {
-        $filter = new ApiFilter();
-        $filterItems = $filter->transform($request);
+        //$filter = new ApiFilter();
+        //$filterItems = $filter->transform($request);
 
         $includeSkills = $request->query('includeSkills');
         $includeProjects = $request->query('includeProjects');
 
-        $employees = Employee::where($filterItems);
-
+        //$employees = Employee::where($filterItems);
+        $employees = Employee::all();
         if ($includeSkills) {
             $employees = $employees->with('skills');
         }
@@ -32,9 +32,7 @@ class EmployeeController extends Controller
             $employees = $employees->with('projects');
         }
 
-        return new EmployeeCollection(
-            $employees->paginate()->appends($request->query())
-        );
+        return new EmployeeCollection($employees);
     }
 
     /**

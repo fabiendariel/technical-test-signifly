@@ -18,14 +18,7 @@ class ProjectController extends Controller
      */
     public function index(Request $request)
     {
-        $filter = new ApiFilter();
-        $filterItems = $filter->transform($request);
-
-        $projects = Project::where($filterItems);
-
-        return new ProjectCollection(
-            $projects->paginate()->appends($request->query())
-        );
+        return new ProjectCollection(Project::all());
     }
 
     /**
@@ -46,6 +39,14 @@ class ProjectController extends Controller
     public function show(Project $project)
     {
         return new ProjectResource($project);
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        return new ProjectResource(Project::create($request->all()));
     }
 
     /**

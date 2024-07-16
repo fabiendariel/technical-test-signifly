@@ -18,17 +18,8 @@ class SkillController extends Controller
      * Display a listing of the resource.
      */
     public function index(Request $request)
-    {
-        $filter = new ApiFilter();
-        $queryItems = $filter->transform($request);
-        if (count($queryItems) == 0) {
-            return new SkillCollection(Skill::paginate());
-        } else {
-            $skills = Skill::where($queryItems)->paginate();
-            return new SkillCollection(
-                $skills->appends($request->query())
-            );
-        }
+    {        
+        return new SkillCollection(Skill::all());
     }
 
     public function bulkStore(BulkStoreSkillRequest $request)

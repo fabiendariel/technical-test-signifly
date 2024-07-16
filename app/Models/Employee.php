@@ -10,6 +10,21 @@ class Employee extends Model
 {
     use HasFactory;
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'name',
+        'phone',
+        'email',
+        'profile_img',
+        'knowledge',
+        'experience',
+        'role',
+    ];
+
     public function skills(): BelongsToMany
     {
         return $this->belongsToMany(Skill::class)->as('employee_skill')->withPivot("expertise");
