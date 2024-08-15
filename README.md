@@ -27,10 +27,8 @@ docker run --rm \
 
 <p>Install the Node dependencies using the following command: <code>./vendor/bin/sail npm ci</code>.</p>
 
-<p>Visit the site in your browser at <a href="http://localhost">http://localhost</a>. You should see the Signifly Technical Test page.</p>
 
-
-<p>Install <a href="https://tailwindcss.com/docs/guides/laravelp">Tailwind for Laravel</a></p>
+<p>Install <a href="https://tailwindcss.com/docs/guides/laravel">Tailwind for Laravel</a></p>
 
 
 <p>Install AlpineJs for Laravel with NPM <code>npm install alpinejs</code> or via a cdn link in your layout
@@ -38,7 +36,7 @@ docker run --rm \
 
 <p>Install Precognition for Laravel and Alpine <code>
 npm install laravel-precognition-alpine
-</code> and update <code>resources/js/app.js</code> with this</p>
+</code> and if not already present, update <code>resources/js/app.js</code> with this</p>
 
 ```
 import Alpine from 'alpinejs';
@@ -53,6 +51,9 @@ Alpine.start();
 <p>Generate the SQLITE database <code>php artisan migrate</code> and
 
 add some test employees <code>php artisan db:seed</code></p>
+
+<p>Visit the site in your browser at <a href="http://localhost">http://localhost</a>. You should see the Signifly Technical Test page.</p>
+
 
 <h2>Useful Commands</h2>
 
